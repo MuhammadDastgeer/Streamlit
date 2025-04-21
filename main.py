@@ -1,6 +1,11 @@
-def main():
-    print("Hello from first-streamlit!")
+import streamlit as st
 
+st.title("HI")
+st.subheader("Brewed with streamlit")
+st.text("Welcome to your first interative app")
+st.write("Chooose your fav. variety of chai")
 
-if __name__ == "__main__":
-    main()
+chai = st.selectbox("Your fav programming language: ", ["Python", "Java", "javascript", "C++"])
+st.write(f"Your choose {chai}. Excellent choise")
+
+st.success("Your programming language has been Good")
