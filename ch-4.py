@@ -14,6 +14,7 @@ if file:
 if file:
     st.subheader("Summary Stats")
     st.write(df.describe())
+    st.bar_chart(df['City'])
 
 if file:
     cities = df["City"].unique()
