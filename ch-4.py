@@ -1,10 +1,14 @@
 import streamlit as st
 import pandas as pd
 
+# Data analysis 
+
 st.title("Chai Sales Dashboard")
 
+# File uploader
 file  = st.file_uploader("UPload your csv file", type=["csv"])
 
+# Data analysis using Pandas function
 if file:
     df = pd.read_csv(file)
     st.subheader("Data Preview")

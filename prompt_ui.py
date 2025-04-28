@@ -1,11 +1,12 @@
-# from langchain_openai import ChatOpenAI
+# LLMS, CHATBOT
+
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 import streamlit as st
 from langchain_core.prompts import PromptTemplate,load_prompt
 
 load_dotenv()
-# model = ChatOpenAI()
+
 model = ChatGoogleGenerativeAI(model='gemini-1.5-pro')
 
 st.header('Reasearch Tool')

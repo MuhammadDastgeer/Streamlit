@@ -1,6 +1,9 @@
 import streamlit as st
 import requests
 
+
+# Apis
+
 st.title("Live currency converter")
 amount = st.number_input("Enter the amount in INR", min_value=1)
 
